@@ -1,0 +1,6 @@
+{
+  "name": "Routines",
+  "description": "An offline-first routines and daily habits planner with Google Sheets synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

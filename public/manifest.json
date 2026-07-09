@@ -1,0 +1,17 @@
+{
+  "name": "Routines",
+  "short_name": "Routines",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8ff",
+  "theme_color": "#006d38",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDgerfxbyIOw9RhTO97m5AOyYuAWBdAY8X_Ia7JFLnFNUljdYYPDtra0zJ4M7_BvVy1NlH88jklIWoHatdjmbgiYtiWWeYWsDTSZp2FbhZMIl-0GkJwan2_3ywUByRpj25Ee0Dnagn4LUc6KbzZ-Lqd4HRmtWIKQr7I9CMCUZwx6eCwrL8_NEXflALnGOCsXEtfI4TXiBDjOL5_svTB9xK5i-WEHh9LlmTn0AxmEDVBsAvEpZ9G9aLllPDMyHOzCn508J26spAAyQ",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

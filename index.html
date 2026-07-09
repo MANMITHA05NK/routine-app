@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routines</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#006d38" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Clean up service workers and caches to prevent stale caching issues in development
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (let registration of registrations) {
+            registration.unregister().then((success) => {
+              if (success) console.log('ServiceWorker unregistered successfully');
+            });
+          }
+        });
+      }
+      if ('caches' in window) {
+        caches.keys().then((names) => {
+          for (let name of names) {
+            caches.delete(name).then(() => {
+              console.log('Cache cleared:', name);
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+
